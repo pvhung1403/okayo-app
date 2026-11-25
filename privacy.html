@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Okayo — Privacy Policy</title>
+  <meta name="description" content="How Okayo: Am I OK to Spend? handles your data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <a class="brand" href="./"><span class="logo" aria-hidden="true">🛡️</span>Okayo</a>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective November 25, 2026</p>
+  </header>
+
+  <main class="card">
+    <p><strong>Okayo: Am I OK to Spend?</strong> ("Okayo", "the app") tells you how much you can safely spend today. It is built to keep your financial data on your iPhone. This policy explains exactly what the app does with information.</p>
+
+    <h2>The short version</h2>
+    <ul>
+      <li>No account, no sign-up, no ads, no third-party analytics, no tracking.</li>
+      <li>Your balances, transactions, bills, goals and budgets are stored only on your device.</li>
+      <li>Data leaves your device only when <em>you</em> use an Okayo+ AI feature, and only what that feature needs.</li>
+      <li>We never sell or share your data for advertising.</li>
+    </ul>
+
+    <h2>1. Data stored on your device</h2>
+    <p>Everything you enter — balance, income, transactions, bills, savings goals, budgets, challenges, notification preferences and receipt photos you attach — is saved locally with Apple's SwiftData. A small summary (today's safe-to-spend numbers) is shared with Okayo's own widgets and Live Activity through an App Group container on your device. We keep no server copy of this data.</p>
+
+    <h2>2. AI features (Okayo+ subscribers only)</h2>
+    <p>When an Okayo+ subscriber uses an AI feature, the app sends a request to our Cloudflare Worker proxy, which forwards it to Google's Gemini API. This keeps our API key off your device.</p>
+    <ul>
+      <li><strong>Smart Money Coach:</strong> your question plus a short financial context — available balance, upcoming bills total, daily safe-to-spend, amount left today and days until payday.</li>
+      <li><strong>AI Receipt Scan:</strong> the receipt photo you choose, so the merchant, amount and category can be extracted.</li>
+      <li><strong>Proof of subscription:</strong> the Apple-signed transaction record of your Okayo+ purchase, so the proxy can confirm you are a subscriber. It contains no payment details.</li>
+    </ul>
+    <p>Our proxy does not store requests or responses. Google processes them under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms</a>, so avoid including information you don't want processed in your questions. When the proxy is unavailable, receipts are read on-device with Apple's Vision framework and the coach falls back to on-device guidance; nothing is uploaded in that case.</p>
+
+    <h2>3. Camera and photos</h2>
+    <p>The camera and photo picker are used only when you choose to scan or attach a receipt. Okayo does not access any other photos.</p>
+
+    <h2>4. Purchases</h2>
+    <p>Subscriptions are processed by Apple through the App Store. We never see your name, Apple ID or payment information. Manage or cancel anytime in Settings › Apple Account › Subscriptions.</p>
+
+    <h2>5. Notifications</h2>
+    <p>Bill reminders and alerts are scheduled locally on your iPhone. No push notification server is involved.</p>
+
+    <h2>6. Children</h2>
+    <p>Okayo is not directed at children under 13 and does not knowingly collect information from them.</p>
+
+    <h2>7. Your choices and deletion</h2>
+    <p>You can edit or delete any entry in the app, reset all data from Settings inside the app, or delete the app to remove everything it stored on your device. Because we keep no server copy, there is nothing further for us to delete.</p>
+
+    <h2>8. Changes</h2>
+    <p>If this policy changes, we will update this page and the effective date above.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions? Open an issue at <a href="https://github.com/pvhung1403/okayo-app/issues">github.com/pvhung1403/okayo-app/issues</a>.</p>
+  </main>
+
+  <footer class="muted"><a href="./">Support</a> · <a href="privacy.html">Privacy</a> · © 2026 Okayo</footer>
+</body>
+</html>
